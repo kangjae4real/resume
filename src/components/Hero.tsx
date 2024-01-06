@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 import ContentLayout from "./layouts/ContentLayout";
 import Title from "./Title";
+import { MOBILE_MEDIA_QUERY } from "../styles/mediaQuery";
 
 const InnerContainer = styled.div`
   width: 100%;
@@ -12,9 +13,17 @@ const InnerContainer = styled.div`
   gap: 16px;
 
   margin-top: 20px;
+
+  ${MOBILE_MEDIA_QUERY} {
+    flex-direction: row;
+  }
 `;
 
-const ImageContainer = styled.div``;
+const ImageContainer = styled.div`
+  ${MOBILE_MEDIA_QUERY} {
+    width: 50%;
+  }
+`;
 
 const TextContainer = styled.div`
   margin-top: 16px;
@@ -22,11 +31,20 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  ${MOBILE_MEDIA_QUERY} {
+    width: 50%;
+    justify-content: center;
+  }
 `;
 
 const Description = styled.span`
   font-size: 22px;
   line-height: 1.4;
+
+  ${MOBILE_MEDIA_QUERY} {
+    font-size: 25px;
+  }
 `;
 
 interface HeroProps {}
