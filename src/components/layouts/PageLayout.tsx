@@ -1,5 +1,5 @@
 import React from "react";
-import GlobalStyle from "../styles/GlobalStyle";
+import GlobalStyle from "../../styles/GlobalStyle";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -12,6 +12,7 @@ const Gradient = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
 
   width: 100%;
   height: 10px;
