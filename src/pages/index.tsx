@@ -3,7 +3,7 @@ import type { HeadFC, PageProps } from "gatsby";
 import SEO from "../components/SEO";
 import PageLayout from "../components/layouts/PageLayout";
 import Hero from "../components/Hero";
-import Career from "../components/Career";
+import Career from "../components/career/Career";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (

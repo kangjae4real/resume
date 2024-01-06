@@ -24,6 +24,8 @@ const Gradient = styled.div`
 
 const ChildrenContainer = styled.div`
   width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 
   padding-top: 10px;
 `;
