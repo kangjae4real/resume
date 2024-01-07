@@ -9,6 +9,7 @@ export const SKILLS_LIST: Skills[] = [
     detail: [
       "Search Engine Optimization(SEO)을 고민하고 개발하고 적용해본 경험이 있습니다.",
       "IE11, Chrome, Safari 등 크로스 브라우징을 고려하고 코드를 작성하고 개선해본 경험이 있습니다.",
+      "반복적인 업무를 해결할 수 있는 Node.js CLI 툴링도구를 개발하는 것을 즐기고 잘할 수 있습니다.",
     ],
   },
   {
