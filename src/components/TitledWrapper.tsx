@@ -6,19 +6,20 @@ const Container = styled.div``;
 
 const TitleContainer = styled.div``;
 
-const ContentContainer = styled.div``;
+const ContentContainer = styled.div`
+  font-size: 15px;
+`;
 
 interface TitledWrapperProps {
   title: string;
-  titleProps: TitleProps;
   content: string;
 }
 
-const TitledWrapper: React.FC<TitledWrapperProps> = ({ title, titleProps, content }) => {
+const TitledWrapper: React.FC<TitledWrapperProps> = ({ title, content }) => {
   return (
     <Container>
       <TitleContainer>
-        <Title {...titleProps}>{title}</Title>
+        <Title fontSize="28px">{title}</Title>
       </TitleContainer>
 
       <ContentContainer>{content}</ContentContainer>
