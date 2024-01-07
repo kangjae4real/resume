@@ -4,12 +4,14 @@ import SEO from "../components/SEO";
 import PageLayout from "../components/layouts/PageLayout";
 import Hero from "../components/Hero";
 import Career from "../components/career/Career";
+import Activity from "../components/Activity";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <PageLayout>
       <Hero />
       <Career />
+      <Activity />
     </PageLayout>
   );
 };

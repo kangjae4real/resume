@@ -7,7 +7,7 @@ interface CareerProps {}
 
 const Career: React.FC<CareerProps> = () => {
   return (
-    <ContentLayout title="Career">
+    <ContentLayout title="경력">
       {CAREER_LIST.map((value) => (
         <CareerDetail {...value} />
       ))}
