@@ -5,6 +5,7 @@ import PageLayout from "../components/layouts/PageLayout";
 import Hero from "../components/Hero";
 import Career from "../components/career/Career";
 import Activity from "../components/Activity";
+import Skills from "../components/Skills";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -12,6 +13,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Hero />
       <Career />
       <Activity />
+      <Skills />
     </PageLayout>
   );
 };
