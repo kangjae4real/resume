@@ -21,7 +21,7 @@ export const ACTIVITY_LIST: Activity[] = [
   },
   {
     title: "정보처리기능사",
-    description: "컴퓨터시스템, DB, 네트워크 등 정버처리 실력을 평가하는 자격입니다. 고등학교 재학 중 취득하였습니다.",
+    description: "컴퓨터시스템, DB, 네트워크 등 정보처리 실력을 평가하는 자격입니다. 고등학교 재학 중 취득하였습니다.",
     startedAt: "2020.10",
   },
   {
