@@ -48,7 +48,13 @@ const ContentContainer = styled.div`
   }
 `;
 
-const List = styled.ul``;
+const List = styled.ul`
+  margin-left: 10px;
+
+  ${MOBILE_MEDIA_QUERY} {
+    margin: 0;
+  }
+`;
 
 const Item = styled.li`
   list-style: none;
