@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import Career from "../components/career/Career";
 import Activity from "../components/Activity";
 import Skills from "../components/Skills";
+import Contact from "../components/Contact";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -14,6 +15,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Career />
       <Activity />
       <Skills />
+      <Contact />
     </PageLayout>
   );
 };
