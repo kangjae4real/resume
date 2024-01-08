@@ -54,16 +54,16 @@ const Skills: React.FC<SkillsProps> = () => {
 
   return (
     <ContentLayout title="다루는 기술">
-      {SKILLS_LIST.map(({ title, detail }) => (
-        <Container>
+      {SKILLS_LIST.map(({ title, detail }, index) => (
+        <Container key={index}>
           <TitleContainer>
             <Title fontSize={width > MOBILE_BREAK_POINT ? "32px" : "28px"}>{title}</Title>
           </TitleContainer>
 
           <ListContainer>
             <List>
-              {detail.map((item) => (
-                <Item>
+              {detail.map((item, index) => (
+                <Item key={index}>
                   <ItemText>{item}</ItemText>
                 </Item>
               ))}

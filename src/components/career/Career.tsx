@@ -8,8 +8,8 @@ interface CareerProps {}
 const Career: React.FC<CareerProps> = () => {
   return (
     <ContentLayout title="경력">
-      {CAREER_LIST.map((value) => (
-        <CareerDetail {...value} />
+      {CAREER_LIST.map((value, index) => (
+        <CareerDetail key={index} {...value} />
       ))}
     </ContentLayout>
   );
