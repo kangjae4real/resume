@@ -94,8 +94,8 @@ const CareerWorkInfo: React.FC<CareerWorkInfoProps> = ({ id }) => {
 
   return (
     <Container>
-      {detail.map(({ title, description, skills, work, improve, startedAt, endAt }) => (
-        <>
+      {detail.map(({ title, description, skills, work, improve, startedAt, endAt }, index) => (
+        <React.Fragment key={index}>
           <InnerContainer>
             <Title fontSize={width > MOBILE_BREAK_POINT ? "32px" : "21px"} style={{ marginBottom: 14 }}>
               {title}
@@ -119,8 +119,8 @@ const CareerWorkInfo: React.FC<CareerWorkInfoProps> = ({ id }) => {
                 업무
               </Title>
               <List>
-                {work.map((item) => (
-                  <Item>
+                {work.map((item, index) => (
+                  <Item key={index}>
                     <ItemText>{item}</ItemText>
                   </Item>
                 ))}
@@ -132,8 +132,8 @@ const CareerWorkInfo: React.FC<CareerWorkInfoProps> = ({ id }) => {
                 개선한 점
               </Title>
               <List>
-                {improve.map((item) => (
-                  <Item>
+                {improve.map((item, index) => (
+                  <Item key={index}>
                     <ItemText>{item}</ItemText>
                   </Item>
                 ))}
@@ -145,15 +145,15 @@ const CareerWorkInfo: React.FC<CareerWorkInfoProps> = ({ id }) => {
                 사용한 기술
               </Title>
               <List>
-                {skills.map((skill) => (
-                  <Item>
+                {skills.map((skill, index) => (
+                  <Item key={index}>
                     <ItemText>{skill}</ItemText>
                   </Item>
                 ))}
               </List>
             </ContentContainer>
           </InnerContainer>
-        </>
+        </React.Fragment>
       ))}
     </Container>
   );
