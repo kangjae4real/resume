@@ -12,7 +12,7 @@ const InnerContainer = styled.div`
   flex-direction: column;
   gap: 16px;
 
-  margin-top: 20px;
+  margin-top: 42px;
 
   ${MOBILE_MEDIA_QUERY} {
     flex-direction: row;
