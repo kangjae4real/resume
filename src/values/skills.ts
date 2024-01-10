@@ -31,7 +31,7 @@ export const SKILLS_LIST: Skills[] = [
   {
     title: "DevOps",
     detail: [
-      "반복적인 업무를 해결할 수 있는 Node.js CLI 툴링도구를 개발하는 것을 즐기고 잘할 수 있습니다.",
+      "반복적인 업무를 해소할 수 있는 Node.js CLI 툴링도구를 개발하는 것을 즐기고 잘할 수 있습니다.",
       "Docker와 Docker Compose를 이해하고 활용할 수 있습니다.\n모든 Application(FE, BE, NGINX)을 Dockerize하여 개발합니다.",
       "AWS EC2, Microsoft Azure 인스턴스들을 활용하여 컨테이너를 띄워 배포할 수 있습니다.",
     ],

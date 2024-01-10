@@ -45,8 +45,8 @@ const Contact: React.FC<ContactProps> = () => {
       <Container>
         <ListContainer>
           <List>
-            {CONTACT_LIST.map(({ name, link }) => (
-              <Item>
+            {CONTACT_LIST.map(({ name, link }, index) => (
+              <Item key={index}>
                 <ItemAnchor href={link} target="_blank">
                   {name}
                 </ItemAnchor>

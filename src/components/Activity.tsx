@@ -50,8 +50,8 @@ const Activity: React.FC<ActivityProps> = () => {
 
   return (
     <ContentLayout title="개인 활동">
-      {ACTIVITY_LIST.map(({ title, description, startedAt, endAt }) => (
-        <Container>
+      {ACTIVITY_LIST.map(({ title, description, startedAt, endAt }, index) => (
+        <Container key={index}>
           <TitleContainer>
             <Title fontSize={width > MOBILE_BREAK_POINT ? "32px" : "28px"}>{title}</Title>
           </TitleContainer>
