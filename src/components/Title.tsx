@@ -3,14 +3,14 @@ import React from "react";
 import { MOBILE_MEDIA_QUERY } from "../styles/mediaQuery";
 
 interface TextProps extends Pick<React.CSSProperties, "fontSize"> {
-  innerContent?: boolean;
+  $innerContent?: boolean;
 }
 
 const Text = styled.p<TextProps>`
   font-weight: bold;
 
-  ${({ fontSize, innerContent }) =>
-    innerContent
+  ${({ fontSize, $innerContent }) =>
+    $innerContent
       ? css`
           font-size: 28px;
           margin-bottom: 14px;
@@ -34,9 +34,9 @@ export interface TitleProps extends TextProps {
   style?: React.CSSProperties;
 }
 
-const Title: React.FC<TitleProps> = ({ children, fontSize, withPeriodMark = false, innerContent = false, style }) => {
+const Title: React.FC<TitleProps> = ({ children, fontSize, withPeriodMark = false, $innerContent = false, style }) => {
   return (
-    <Text fontSize={fontSize} innerContent={innerContent} style={style}>
+    <Text fontSize={fontSize} $innerContent={$innerContent} style={style}>
       {children}
       {withPeriodMark && <PeriodMark>.</PeriodMark>}
     </Text>
