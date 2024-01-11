@@ -84,7 +84,7 @@ const CareerDetail: React.FC<CareerDetailProps> = ({ id, companyName, team, job,
   return (
     <Container>
       <CompanyInfo>
-        <Title innerContent>{companyName}</Title>
+        <Title $innerContent>{companyName}</Title>
 
         <CompanyInnerContainer>
           <div>
