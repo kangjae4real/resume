@@ -88,6 +88,25 @@ export const CAREER_DETAIL_LIST: CareerDetail[] = [
     id: 2,
     detail: [
       {
+        title: "JYP Partners 사이트 개발",
+        description: "JYP Partners 요청으로 개발한 Next.js 베이스 반응형 웹사이트입니다.",
+        link: "https://jyppartners.com",
+        skills: ["TypeScript", "Next.js", "styled-components", "axios"],
+        work: [
+          "모든 페이지 SSR로 동작하도록 개발",
+          "모든 페이지 다국어화 (영문, 한글)",
+          "CSS 애니메이션 개발",
+          "FE, BE 애플리케이션을 Dockerizing하여 배포",
+        ],
+        improve: [
+          "API 요청 코드를 Server Side로 옮겨 로직 분리\n(CSR 대비 로딩시간 3초 단축)",
+          "검색엔진최적화(SEO) 진행",
+          "Open API Generator 도입으로 생성된 요청코드만\n사용하도록 하여 개발자경험을 개선",
+        ],
+        startedAt: "2023.09",
+        endAt: "2023.10",
+      },
+      {
         title: "On-Premise Issue Tracker 개발",
         description:
           "RiskX 요청으로 개발한 React 베이스 반응형 웹사이트입니다.\nJira/Bitbucket Relay API를 활용합니다.",
@@ -127,30 +146,33 @@ export const CAREER_DETAIL_LIST: CareerDetail[] = [
         startedAt: "2023.01",
         endAt: "2023.04",
       },
-      {
-        title: "JYP Partners 사이트 개발",
-        description: "JYP Partners 요청으로 개발한 Next.js 베이스 반응형 웹사이트입니다.",
-        link: "https://jyppartners.com",
-        skills: ["TypeScript", "Next.js", "styled-components", "axios"],
-        work: [
-          "모든 페이지 SSR로 동작하도록 개발",
-          "모든 페이지 다국어화 (영문, 한글)",
-          "CSS 애니메이션 개발",
-          "FE, BE 애플리케이션을 Dockerizing하여 배포",
-        ],
-        improve: [
-          "API 요청 코드를 Server Side로 옮겨 로직 분리\n(CSR 대비 로딩시간 3초 단축)",
-          "검색엔진최적화(SEO) 진행",
-          "Open API Generator 도입으로 생성된 요청코드만\n사용하도록 하여 개발자경험을 개선",
-        ],
-        startedAt: "2023.09",
-        endAt: "2023.10",
-      },
     ],
   },
   {
     id: 3,
     detail: [
+      {
+        title: "Doczip",
+        description: "유료사용자 50,000명의 서비스로 반응형 웹\n주소지 검색 및 공부 열람 서비스입니다.",
+        link: "https://doczip.kr",
+        skills: ["TypeScript", "React", "styled-components", "axios"],
+        work: [
+          "주소지를 검색하여 해당 물건의 각종 정보를\n확인할 수 있는 Report 기능을 개발",
+          "사이트 전반적인 UI/UX 개발",
+          "등기부등본, 건축물대장, 토지대장 등 부동산 계약에\n필요한 공적장부 열람 및 발급 기능 개발",
+          "사이트 리뉴얼 참여",
+        ],
+        improve: [
+          "Open API Generator 도입으로 생성된 요청코드만\n사용하도록 하여 개발자 경험을 개선",
+          "기존에 redux-observable로 작성된 코드를\nredux-thunk로 재작성하여 개발자 경험을 개선",
+          "API 요청코드를 컴포넌트에서 Redux Thunk로 옮겨\n로직 분리를 하여 복잡한 코드를 읽기 좋은 코드로 개선",
+          "esbuild를 도입하여 기존 1분이상 걸리던 빌드시간을 10초로 단축",
+          "컴포넌트 Memoization을 적극활용하여 새로이\n렌더링되는 상황을 방지하여 사용자 경험 개선",
+          "MaterialUI를 적극 활용, 커스텀해서 사용하여\n편리하게 개발할 수 있도록 개선",
+        ],
+        startedAt: "2021.09",
+        endAt: "2023.08",
+      },
       {
         title: "Blitz Core Web",
         description:
@@ -176,28 +198,6 @@ export const CAREER_DETAIL_LIST: CareerDetail[] = [
         improve: ["Redux를 사용할때에 불편을 해소할 수 있도록\n자동으로 Action, Selector를 생성해주는 Util 개발"],
         startedAt: "2021.09",
         endAt: "2022.04",
-      },
-      {
-        title: "Doczip",
-        description: "유료사용자 50,000명의 서비스로 반응형 웹\n주소지 검색 및 공부 열람 서비스입니다.",
-        link: "https://doczip.kr",
-        skills: ["TypeScript", "React", "styled-components", "axios"],
-        work: [
-          "주소지를 검색하여 해당 물건의 각종 정보를\n확인할 수 있는 Report 기능을 개발",
-          "사이트 전반적인 UI/UX 개발",
-          "등기부등본, 건축물대장, 토지대장 등 부동산 계약에\n필요한 공적장부 열람 및 발급 기능 개발",
-          "사이트 리뉴얼 참여",
-        ],
-        improve: [
-          "Open API Generator 도입으로 생성된 요청코드만\n사용하도록 하여 개발자 경험을 개선",
-          "기존에 redux-observable로 작성된 코드를\nredux-thunk로 재작성하여 개발자 경험을 개선",
-          "API 요청코드를 컴포넌트에서 Redux Thunk로 옮겨\n로직 분리를 하여 복잡한 코드를 읽기 좋은 코드로 개선",
-          "esbuild를 도입하여 기존 1분이상 걸리던 빌드시간을 10초로 단축",
-          "컴포넌트 Memoization을 적극활용하여 새로이\n렌더링되는 상황을 방지하여 사용자 경험 개선",
-          "MaterialUI를 적극 활용, 커스텀해서 사용하여\n편리하게 개발할 수 있도록 개선",
-        ],
-        startedAt: "2021.09",
-        endAt: "2023.08",
       },
     ],
   },
