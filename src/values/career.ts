@@ -220,7 +220,7 @@ export const CAREER_DETAIL_LIST: CareerDetail[] = [
           "Next.js SSG 코드 개선으로 First Contentful Paint 3초에서 1초로 개선",
           "기존 불필요한 Loader를 제거하고 esbuild를 도입하여 개발모드에서\n진행되는 빌드 시간을 1분에서 8초까지 단축",
         ],
-        startedAt: "2020.08",
+        startedAt: "2020.09",
         endAt: "2021.08",
       },
     ],
