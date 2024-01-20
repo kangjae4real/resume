@@ -99,7 +99,6 @@ export const CAREER_DETAIL_LIST: CareerDetail[] = [
           "FE, BE 애플리케이션을 Dockerizing하여 배포",
         ],
         improve: [
-          "API 요청 코드를 Server Side로 옮겨 로직 분리\n(CSR 대비 로딩시간 3초 단축)",
           "검색엔진최적화(SEO) 진행",
           "Open API Generator 도입으로 생성된 요청코드만\n사용하도록 하여 개발자경험을 개선",
         ],
