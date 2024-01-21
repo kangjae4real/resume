@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import { MOBILE_MEDIA_QUERY } from "../styles/mediaQuery";
 
 interface AnchorProps {
-  withUnderline?: boolean;
+  $withUnderline?: boolean;
 }
 
 const Anchor = styled.a<AnchorProps>`
@@ -13,8 +13,8 @@ const Anchor = styled.a<AnchorProps>`
   color: #000 !important;
   text-decoration: none;
 
-  ${({ withUnderline }) =>
-    withUnderline &&
+  ${({ $withUnderline }) =>
+    $withUnderline &&
     css`
       &:after {
         position: absolute;
@@ -37,9 +37,9 @@ interface LinkProps extends AnchorProps {
   children: React.ReactNode | string;
 }
 
-const Link: React.FC<LinkProps> = ({ href, children, withUnderline }) => {
+const Link: React.FC<LinkProps> = ({ href, children, $withUnderline }) => {
   return (
-    <Anchor href={href} withUnderline={withUnderline} target="_blank">
+    <Anchor href={href} $withUnderline={$withUnderline} target="_blank">
       {children}
     </Anchor>
   );

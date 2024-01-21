@@ -146,12 +146,12 @@ const CareerDetail: React.FC<CareerDetailProps> = ({
     return (
       <TitleContainer>
         {links.map((link, index) => (
-          <>
+          <React.Fragment key={index}>
             {index !== 0 && <Crumb> & </Crumb>}
-            <Link href={link} withUnderline>
+            <Link href={link} $withUnderline>
               {companyNames[index]}
             </Link>
-          </>
+          </React.Fragment>
         ))}
       </TitleContainer>
     );

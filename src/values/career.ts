@@ -16,7 +16,7 @@ export const CAREER_LIST: Career[] = [
     team: "Techne 1 팀",
     job: "Front-end Developer",
     particulars:
-      "탱커의 경영난으로 기술팀 전원 제노임펙트로 넘어가게 되었습니다.\n소속은 바뀌었지만, 여전히 탱커에서의 업무를 진행하고 있습니다.\n(인수)",
+      "탱커의 경영난으로 기술팀 전원 제노임펙트로 넘어가게 되었습니다.\n소속은 바뀌었지만, 여전히 탱커에서의 업무를 진행하고 있습니다.\n(합병)",
     links: ["https://tanker.ai", "https://www.xenoimpact.com"],
     startedAt: "2021.09",
     endAt: "현재",
