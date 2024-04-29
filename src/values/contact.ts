@@ -22,6 +22,6 @@ export const CONTACT_LIST: Contact[] = [
   },
   {
     name: "노션 이력서",
-    link: "https://kangjae-choi.notion.site/Frontend-Developer-6057b054263942c1a550e475fefbba90?pvs=4",
+    link: "https://kangjae-choi.notion.site/Frontend-Developer-6057b054263942c1a550e475fefbba90",
   },
 ];
